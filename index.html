@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXP85MN');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scholar's Institute of Technology and Management</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!-- custom CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
+<link href="css/animate.css" rel="stylesheet">
+<link rel="stylesheet" href="css/pro.css">
+<link rel="stylesheet" href="js/form/validationEngine.jquery.css" >
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+
+<script>
+    jQuery(document).ready(function(){
+    url = new URL(window.location.href);
+    var campaign_name = url.searchParams.get("utm_campaign");
+    var keyword = url.searchParams.get("utm_keyword");
+    var source = url.searchParams.get("utm_source");
+    var network = url.searchParams.get("utm_network");
+    var utm_medium = url.searchParams.get("utm_medium");
+    
+    document.getElementById("campaign_url").value = window.location.href;
+    document.getElementById("campaign_name").value = campaign_name;
+    document.getElementById("keyword").value = keyword;
+    document.getElementById("sourceId").value = source;
+    document.getElementById("network").value = network;
+    document.getElementById("utm_medium").value = utm_medium;
+    
+    if (document.referrer)
+    {
+    var myReferer = document.referrer;
+    document.getElementById("referrerid").value = myReferer;
+    }
+    else
+    {
+    document.getElementById("referrerid").value = 'None';
+    }
+    });
+    </script>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXP85MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header id="header" class="header ">
+<div class="header-absolute zIndex2 w-100">
+<div class="container">
+<div class="top-head py-2">
+<div class="row align-items-center">
+<div class="col-lg-4 col-md-4 col-8 logo"> 
+<img class="img-fluid" src="images/logo.png" alt="" >
+</div>
+
+<div class="col-lg-8 col-md-8 col-4 text-end">
+  <img class="img-fluid" src="images/logo-right.png" alt=""/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+  
+<!-- Hero section start (Slider) -->
+<section class="hero-sectionn position-relative">
+<div class="bc-img01">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-md-12 leftsec_content">
+<div class="dsu-addmission">
+<div class="bannerContent"> 
+<h2 class="font-weight-700">SITM<br/> Guwahati</h2>
+<p class="text-white d-block mt-2">Admissions Open</p>
+<strong class="text-white font-weight-700">Batch 2024</strong>
+</div>
+</div>
+</div>
+
+<div class="col-lg-7 col-md-12">
+<div class="dsu-intro">
+<div id="applyBox" class="wow flipInY">
+<div class="applyBox">
+<div class="dsu-form">
+<div class="frmBg"> <h3 class="text-white fsize26 font-weight-700">Register Now</h3> </div>
+<div class="contact_fild">
+<form id="formID" name="contact-form" method="post" action="https://uniproeducation.com/lp/sitm-admission-2024-save.php">
+<div class="formIDfid">
+<div class="contact-fild-box">
+<div class="form-group">
+<input name="name" class="form-control validate[required, custom[name]]" placeholder="Name" data-errormessage-value-missing="*Name is required!" type="text" />
+</div>
+</div>
+<div class="contact-fild-box">
+<div class="form-group">
+<input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="text" />
+</div>
+</div>
+<div class="contact-fild-box">
+<div class="form-group">
+<input name="phone" id="phone" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" data-errormessage-value-missing="* Mobile is required!" type="tel" />
+</div>
+</div>
+
+<div class="contact-fild-box">
+<div class="form-group">
+<select class="form-select validate[required]" data-errormessage-value-missing="* Course is required!" name="course">
+<option value="" selected="selected">Select Course*</option>
+<option value="Btech">Btech</option>
+</select>
+</div>
+</div>
+
+<div class="contact-fild-box">
+<div class="form-group">
+<select name="state" id="stateid" onchange="select_state_func()" data-errormessage-value-missing="* State is required!" class="form-select validate[required]">
+    <option value="">Select Your State*</option>
+    <option value="1">Andaman &amp; Nicobar Islands</option>
+    <option value="2">Andhra Pradesh</option>
+    <option value="3">Arunachal Pradesh</option>
+    <option value="4">Assam</option>
+    <option value="5">Bihar</option>
+    <option value="6">Chandigarh</option>
+    <option value="7">Chhattisgarh</option>
+    <option value="32">Dadra &amp; Nagar Haveli</option>
+    <option value="33">Daman &amp; Diu</option>
+    <option value="8">Delhi &amp; NCR</option>
+    <option value="9">Goa</option>
+    <option value="10">Gujarat</option>
+    <option value="11">Haryana</option>
+    <option value="12">Himachal Pradesh</option>
+    <option value="13">Jammu and Kashmir</option>
+    <option value="14">Jharkhand</option>
+    <option value="15">Karnataka</option>
+    <option value="16">Kerala</option>
+    <option value="17">Madhya Pradesh</option>
+    <option value="18">Maharashtra</option>
+    <option value="19">Manipur</option>
+    <option value="20">Meghalaya</option>
+    <option value="21">Mizoram</option>
+    <option value="22">Nagaland</option>
+    <option value="23">Orissa</option>
+    <option value="24">Pondicherry</option>
+    <option value="25">Punjab</option>
+    <option value="26">Rajasthan</option>
+    <option value="34">Sikkim</option>
+    <option value="27">Tamil Nadu</option>
+    <option value="36">Telangana</option>
+    <option value="28">Tripura</option>
+    <option value="29">Uttar Pradesh</option>
+    <option value="30">Uttaranchal</option>
+    <option value="31">West Bengal</option>
+  </select>
+</div>
+</div>
+<div class="contact-fild-box">
+<div class="form-group">
+  <p id="citypid" style="color:#747474;">
+    <select name="city" id="cityid" data-errormessage-value-missing="* City is required!" class="form-select  formbg1 validate[required]">
+      <option value="">Select Your City*</option>
+    </select>
+  </p>
+</div>
+</div>
+
+<div class="contact-fild-box">
+<div class="form-group">
+<textarea id="queryid" name="inquiry" placeholder="Query*" class="form-control ht validate[required]" data-errormessage-value-missing="* Query is required!" rows="2"></textarea>
+</div>
+</div>
+
+<div class="contact-fild-box text-center mt-2">
+<div class="form-group">
+	<input type="hidden" id="referrerid" name="referrer_name" value="" />
+        <input type="hidden" id="keyword" name="keyword" value="" />
+        <input type="hidden" id="network" name="network" value="" />
+        <input type="hidden" id="campaign_url" name="campaign_url" value="" />
+        <input type="hidden" id="campaign_name" name="campaign_name" value="" />
+        <input type="hidden" id="utm_medium" name="utm_medium"  value="">  
+        <input type="hidden" id="sourceId" name="source" value="" />
+        <input type="hidden" name="orderid" value="985" />
+        <input type="hidden" name="sitename" value="SITMAdmission2024" />
+<button id="btnSubmit" type="submit" class="btn btn_submit text-uppercase" onClick="return verify_mobile();">Submit</button>
+</div>
+
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero section end (Slider) --> 
+
+<section class="position-relative recruiters__section py-4">
+<div class="container">
+<div class="widget-title mb-3 text-center wow fadeInUp">
+<h3 class="font-weight-700 text-blue">MoU Partners</h3>
+</div>
+
+<div class="owl-carousel owl-theme" id="recruiters-slider">
+<div class="recruiters-logo">
+<img class="img-fluid shadow" src="images/Recruiters1.png" alt=""/>
+</div>
+
+<div class="recruiters-logo">
+<img class="img-fluid shadow" src="images/Recruiters2.png" alt=""/>
+</div>
+
+<div class="recruiters-logo">
+<img class="img-fluid shadow" src="images/Recruiters3.png" alt=""/>
+</div>
+
+<div class="recruiters-logo">
+<img class="img-fluid shadow" src="images/Recruiters4.png" alt=""/>
+</div>
+
+<div class="recruiters-logo">
+<img class="img-fluid shadow" src="images/Recruiters5.png" alt=""/>
+</div>
+</div>
+</div>
+</section>
+
+<section class="position-relative offered__section">
+<div class="row align-items-center">
+  <div class="col-lg-3 col-md-12 offered__heading">
+    <div class="widget-title wow fadeInUp text-center">
+<h3 class="font-weight-700 text-blue">Courses Offered</h3>
+</div>
+  </div>
+
+ <div class="col-lg-9 col-md-12 p-0">
+<div class="owl-carousel owl-theme" id="offered-slider">
+      <div class="offered_item">
+        <div class="offered__row bg-theme">
+          <div class="scope-icon text-end">
+            <img class="img-fluid" src="images/comm-icon1.png" alt="">
+          </div>
+          <h6 class="text-white text-uppercase">B.Tech<br/> civil</h6>
+        </div>
+      </div>
+
+      <div class="offered_item">
+        <div class="offered__row">
+          <div class="scope-icon text-end">
+            <img class="img-fluid" src="images/comm-icon2.png" alt="">
+          </div>
+          <h6 class="text-white text-uppercase">B.Tech<br/> EEE</h6>
+        </div>
+      </div>
+
+     <div class="offered_item">
+        <div class="offered__row bg-theme">
+          <div class="scope-icon text-end">
+            <img class="img-fluid" src="images/comm-icon7.png" alt="">
+          </div>
+          <h6 class="text-white text-uppercase">B.TECH<br/>
+MECHANICAL</h6>
+        </div>
+      </div>
+
+<div class="offered_item">
+      <div class="offered__row">
+          <div class="scope-icon text-end">
+            <img class="img-fluid" src="images/comm-icon6.png" alt="">
+          </div>
+          <h6 class="text-white text-uppercase">B.TECH<br/> CSE</h6>
+        </div>
+</div>
+
+    <div class="offered_item">
+        <div class="offered__row  bg-theme">
+          <div class="scope-icon text-end">
+            <img class="img-fluid" src="images/comm-icon3.png" alt="">
+          </div>
+          <h6 class="text-white text-uppercase">B.Tech<br/> ECE</h6>
+        </div>
+      </div>
+
+      <!-- <div class="offered_item">
+        <div class="offered__row">
+          <div class="scope-icon text-end">
+            <img class="img-fluid" src="images/comm-icon4.png" alt="">
+          </div>
+          <h6 class="text-white text-uppercase"> <i class="fal fa-long-arrow-left"></i> View All</h6>
+        </div>
+      </div> -->
+	  
+</div>
+</div>
+</div>
+
+</section>
+
+
+<section class="position-relative about__section py-4">
+<div class="container">
+<div class="widget-title mb-4 wow fadeInUp text-center">
+<h3 class="font-weight-700 text-blue">About SITM</h3>
+</div>
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-6 col-sm-12 order-md-2">
+    <div class="position-relative education_sil-row">
+      <img class="img-fluid shadow" src="images/aboutimg.jpg" alt=""/>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
+    <p class="text-justify">Scholar's Institute of Technology and Management is promoted by the Scholar's Academy Education Trust, founded on 8th May, 2008 under the Indian Trust Act, 1882. Spread over a lush green expanse of more than 10 acres, set against picturesque surroundings, within a vibrant city as well as outside of it, endowed with all the modern amenities, yet in a natural amphitheatre, SITM provides an excellent academic ambience for intellectual activities.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="position-relative training__section text-center py-4">
+<div class="container">
+<div class="widget-title mb-3 wow fadeInUp">
+<h3 class="font-weight-700 text-blue">Our Recruiters and Training Partners</h3>
+</div>
+
+<div class="owl-carousel owl-theme" id="training-slider">
+<div class="recruiters-item">
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners1.jpg" alt=""/>
+  </div>
+
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners2.jpg" alt=""/>
+  </div>
+</div>
+
+<div class="recruiters-item">
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners3.jpg" alt=""/>
+  </div>
+
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners4.jpg" alt=""/>
+  </div>
+</div>
+
+<div class="recruiters-item">
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners5.jpg" alt=""/>
+  </div>
+
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners6.jpg" alt=""/>
+  </div>
+</div>
+
+<div class="recruiters-item">
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners7.jpg" alt=""/>
+  </div>
+
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners8.jpg" alt=""/>
+  </div>
+</div>
+
+<div class="recruiters-item">
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners9.jpg" alt=""/>
+  </div>
+
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners10.jpg" alt=""/>
+  </div>
+</div>
+
+<div class="recruiters-item">
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners11.jpg" alt=""/>
+  </div>
+
+  <div class="partners_logo">  
+  <img class="img-fluid shadow" src="images/partners12.jpg" alt=""/>
+  </div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<section class="position-relative feature__section py-4 text-center">
+<div class="container">
+<div class="widget-title mb-3 text-center wow fadeInUp position-relative zIndex2">
+<h3 class="font-weight-700 text-blue">Why SITM</h3>
+</div>
+
+<div class="feature__area">
+  <div class="owl-carousel owl-theme" id="feature-slider">
+    <div class="feature__item">
+      <div class="course-icon">
+        <img  class="img-fluid" src="images/icon1.png" alt=""/>
+      </div>
+      <p>100% Placement Assistance</p>
+    </div>
+
+    <div class="feature__item">
+      <div class="course-icon">
+        <img  class="img-fluid" src="images/icon2.png" alt=""/>
+      </div>
+      <p>10+ Acres<br/> Campus</p>
+    </div>
+
+    <div class="feature__item">
+      <div class="course-icon">
+        <img class="img-fluid" src="images/icon3.png" alt=""/>
+      </div>
+      <p>State-of-the-art infrastructure</p>
+    </div>
+
+    <div class="feature__item">
+      <div class="course-icon">
+        <img class="img-fluid" src="images/icon4.png" alt=""/>
+      </div>
+      <p>Highly Skilled<br/> Faculty</p>
+    </div>
+    
+  </div>
+</div>
+</div>
+</section>
+
+<section class="position-relative pt-4 pb-5 bg-white gallery-section">
+<div class="container">
+<div class="widget-title mb-4 text-center wow fadeInUp position-relative zIndex2">
+<h3 class="font-weight-700 text-blue">State Of The Art Infrastructure</h3>
+</div>
+</div>
+
+<div class="gallery__boxed">
+<div class="owl-carousel owl-theme" id="gallery-slides">
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery1.jpg" alt=""/>
+<div class="image-info"><h5><span>01</span> Civil Lab</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery2.jpg" alt=""/>
+<div class="image-info"><h5><span>02</span> Mechanical Lab</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery3.jpg" alt=""/>
+<div class="image-info"><h5><span>03</span> Chemistry Lab</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery4.jpg" alt=""/>
+<div class="image-info"><h5><span>04</span> College Campus</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery5.jpg" alt=""/>
+<div class="image-info"><h5><span>05</span> Computer Lab</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery6.jpg" alt=""/>
+<div class="image-info"><h5><span>06</span> E & C Lab</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery7.jpg" alt=""/>
+<div class="image-info"><h5><span>07</span> Welding Workshop</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery8.jpg" alt=""/>
+<div class="image-info"><h5><span>08</span> Playground</h5></div>
+</div>
+
+<div class="gallery__grid">
+<img class="img-fluid" src="images/gallery9.jpg" alt=""/>
+<!-- <div class="image-info"><h5><span>08</span> Playground</h5></div> -->
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="position-relative loction__section py-5  mt-4 text-center">
+<div class="container">
+  <div class="position-relative zIndex2">
+<div class="row align-items-center">
+  <div class="col-lg-6">
+    <div class="widget-title mb-3 wow fadeInUp position-relative zIndex2">
+<h3 class="font-weight-700 text-white">OUR LOCATION</h3>
+</div>
+     <p class="text-white fs-6 lh-base">Scholar's Institute of Technology and Management<br/>
+Garoghuli (Gog), Garchuk, Guwahati<br/>
+Assam - 781035</p>
+  </div>
+   <div class="col-lg-6 mt-3">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.2477949016456!2d91.72244387519473!3d26.090828677146625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5c45471a4913%3A0xfcbcab5629378517!2sScholar&#39;s%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1715411643639!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="footer position-relative py-3 text-center">
+<div class="container">Copyright © 2024 SITM. All Rights Reserved</div>
+</footer>
+<a href="#" id="back-top" title="Back To Top"></a> 
+<div class="sideNavi" id="sideNavi" style="display: none;">
+<div class="sideNavi-flex">
+<div class="sideNavi-item"><a class="downbg" href="#applyBox">Get In Touch</a></div>
+</div>
+</div>
+<!-- jQuery plugins --> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="css/carousel/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/form/jquery.validationEngine.js"></script> 
+<script src="js/form/jquery.validationEngine-en.js"></script> 
+<script src="js/form/script.js"></script> 
+<script src="js/form/state.js"></script>
+<script src="js/form/course.js"></script>
+<script src="js/form/courseform.js"></script> 
+
+</body>
+</html>
